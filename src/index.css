@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 1px;
+  color: #20110c;
+}
+.Welcome {
+      margin-left: 400px;
+      margin-top: 125px;
+      width: 500pt;
+      height: 170pt;
+      border: 5px outset #20110c;
+      padding: 10px;
+      background-color: #dcbb88;
+  
+}
+.Menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.SideMenu {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #20110c; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.SideMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.SideMenu a:hover {
+  color: #b65454;
+}
+
+.SideMenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
