@@ -35,43 +35,29 @@ h1,h2 {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
+.topnav {
   background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.SideMenu {
-  height: 100%; 
-  width: 0; 
-  position: fixed;
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: #20110c; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+  overflow: hidden;
 }
 
-.SideMenu a {
-  padding: 8px 8px 8px 32px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
+  font-size: 17px;
 }
 
-.SideMenu a:hover {
-  color: #b65454;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.SideMenu .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #7d42e2;
+  color: white;
 }

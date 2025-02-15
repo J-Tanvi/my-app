@@ -18,11 +18,11 @@ function App() {
 
   return (
     <div>
-      <div className="Menu" onClick={() => setMenuOpen(!menuOpen)}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-      </div>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Journal</a>
+        <a href="#about">About</a>
+     </div>
 
       <div className="Welcome">
         <h1>Hello</h1>
