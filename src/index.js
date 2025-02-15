@@ -14,29 +14,17 @@ root.render(
 );
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div>
       <div class="topnav">
-        <a class="active" href="#home">Home</a>
+        <a class="active" href="#home">EmoQuest</a>
         <a href="#news">Journal</a>
         <a href="#about">About</a>
-     </div>
-
-      <div className="Welcome">
-        <h1>Hello</h1>
-        <h2>To start, click the three bars</h2>
-        <div
-          id="OverlayMenu"
-          className="SideMenu"
-          style={{ width: menuOpen ? "250px" : "0" }}
-        >
-          <a href="#" className="closebtn" onClick={() => setMenuOpen(false)}>
-            &times;
-          </a>
-          <a href="Diary.html">Diary</a>
-        </div>
+      </div>
+      <div class="content">
+        <h1>EmoQuest</h1>
+        <h3>Welcome to EmoQuest! Start your emotional journey today!</h3>
       </div>
     </div>
   );

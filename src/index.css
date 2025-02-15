@@ -12,29 +12,6 @@ code {
     monospace;
 }
 
-h1,h2 {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 1px;
-  color: #20110c;
-}
-.Welcome {
-      margin-left: 400px;
-      margin-top: 125px;
-      width: 500pt;
-      height: 170pt;
-      border: 5px outset #20110c;
-      padding: 10px;
-      background-color: #dcbb88;
-  
-}
-.Menu {
-  display: inline-block;
-  cursor: pointer;
-}
-
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -60,4 +37,9 @@ h1,h2 {
 .topnav a.active {
   background-color: #7d42e2;
   color: white;
+}
+
+.content {
+  color: rgb(10, 8, 51);
+  text-align: center;
 }
