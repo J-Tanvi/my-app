@@ -10,7 +10,7 @@ const Contact = React.lazy(() => import("./pages/contactUs"));
 const routes = [
   {path: PathConstants.HOME, element: <Home /> },
   {path: PathConstants.DIARY, element: <Diary /> },
-  {path: PathConstants.CONTACTUS, element: <Contactus /> },
+  //{path: PathConstants.CONTACTUS, element: <Contactus /> },
 ]
 
 export default routes

@@ -1,11 +1,12 @@
 // Filename - Home.jsx
 
 import React from "react";
-import Router from "./routes/Router";
+import {
+    Router,
+} from "react-router-dom";
 // Importing Link from react-router-dom to 
 // navigate to different end points.
-//import { Link } from "react-router-dom";
-import Link from "./components/Link";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return(

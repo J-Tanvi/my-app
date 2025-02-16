@@ -8,7 +8,7 @@ import Layout from "./components/Layout";
 import PathConstants from "./routes/pathConstants";
 import Home from "./pages/home";
 import Diary from "./pages/diary";
-import Contact from "./pages/contactUs";
+import Contact from "./pages/contact-us";
 
 
 function App() {

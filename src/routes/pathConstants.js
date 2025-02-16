@@ -4,9 +4,9 @@ const PathConstants = {
     //home page path
     HOME: "/",
     //contact route
-    CONTACTUS: "contactus",
+    CONTACTUS: "/contact-us",
     //diary route
-    DIARY: "diary",
+    DIARY: "/diary",
 }
 
 export default PathConstants
