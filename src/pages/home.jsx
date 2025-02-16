@@ -14,11 +14,9 @@ const Home = () => {
         <div className="home">
             <h1>EmoQuest</h1>
             <nav>
-                <Link to="/">Home</Link>
-                <br></br>
                 <Link to="/contact-us">ChatBot</Link>
                 <br></br>
-                <Link to="/diary">Diary</Link>
+                <Link to="/diary">Journal</Link>
             </nav>
         </div>
     )

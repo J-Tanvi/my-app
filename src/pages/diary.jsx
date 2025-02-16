@@ -48,12 +48,18 @@ const Diary = () => {
           </button>
         ))}
         <p>Your current mood: {mood}</p>
+        <br></br>
       </div>
 
       {/* Entry Form */}
       <div className="entry-form">
         <input ref={titleRef} type="text" placeholder="Entry Title" />
-        <textarea ref={contentRef} placeholder="Write your journal entry..."></textarea>
+        <br></br>
+        <br></br>
+        <textarea ref={contentRef} 
+        style={{ width: "100%", height: "200px" }}
+        placeholder="Write your journal entry..."></textarea>
+        <br></br>
         <button onClick={addEntry}>Add Entry</button>
       </div>
 

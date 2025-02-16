@@ -33,7 +33,7 @@ function Contactus() {
         ref={iframeRef}
         src="/dist/index.html"  // Ensure this is correct
         width="100%"
-        height="100vh"
+        height="1000vh"
         title="Chatbot"
         style={{ border: 'none' }}
       />
