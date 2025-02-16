@@ -1,4 +1,21 @@
+//./src/routes/index.js
 
+import React from "react"
+import PathConstants from "./routes/pathConstants"
+
+const Home = React.lazy(() => import("./pages/home"));
+const Diary = React.lazy(() => import("./pages/diary"));
+const Contact = React.lazy(() => import("./pages/contactUs"));
+
+const routes = [
+  {path: PathConstants.HOME, element: <Home /> },
+  {path: PathConstants.DIARY, element: <Diary /> },
+  {path: PathConstants.CONTACTUS, element: <Contactus /> },
+]
+
+export default routes
+
+/*
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
@@ -19,7 +36,7 @@ function App() {
     <div>
       <div class="topnav">
         <a class="active" href="#home">EmoQuest</a>
-        <a href="#news">Journal</a>
+        <a href="#diary">Diary</a>
         <a href="#about">About</a>
       </div>
       <div class="content">
@@ -38,3 +55,4 @@ export default App;
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+*/
