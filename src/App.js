@@ -11,6 +11,22 @@ import Diary from "./pages/diary";
 import Contact from "./pages/contactUs";
 import Page404 from './components/Page404';
 
+function ViteApp() {
+  return (
+    <div>
+      <h2>Vite React App</h2>
+      {/* Render the Vite build content */}
+      <iframe
+        src="/dist/index.html"  // path to the Vite app's entry point in public/dist
+        title="Vite React App"
+        width="100%"
+        height="100%"
+        style={{ border: "none" }}
+      />
+    </div>
+  );
+}
+
 
 function App() {
   return (<>
