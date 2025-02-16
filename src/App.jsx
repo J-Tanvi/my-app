@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import ChatBotIcon from "./components/ChatBotIcon"
 import ChatForm from "./components/ChatForm";
 import ChatMessage from "./components/ChatMessage";
@@ -9,8 +9,8 @@ const App = () => {
 
   const generateBotResponse = async (history) => {
 
-    const updateHistory = (text) => {
-      setChatHistory(prev => [...prev.filter(msg => msg.text !== "..."), {role: "model", text}]);
+    const updateHistory = (text, isError = false) => {
+      setChatHistory(prev => [...prev.filter(msg => msg.text !== "..."), {role: "model", text, isError}]);
     }
     history = history.map(({role, text}) => ({role, parts: [{text}]}))
     const requestOptions = {
@@ -29,9 +29,14 @@ const App = () => {
       const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
       updateHistory(apiResponseText);
     } catch (error) {
-      console.log(error);
+      upadateHistory(error.message, true);
     }
   };
+
+  useEffect(() => {
+    chatBodyRef.current.scrollTo({top: chatBodyRef.current.scrollHeight, behavior: "smooth"});
+  }, [chatHistory]);
+
   return (
     <div className="container">
       <div className="chatbot-popup">
@@ -45,7 +50,7 @@ const App = () => {
         </div>
 
       {/* body */}
-        <div className="chat-body">
+        <div ref={chatBodyRef} className="chat-body">
           <div className="message bot-message">
             <ChatBotIcon />
             <p className="message-text">
