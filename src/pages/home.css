@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#F4F0FF, #DACDFF);
+}
+
+/* Main Container */
+.home {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+}
+
+/* Header */
+.home h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6D4FC2;
+  margin-bottom: 40px;
+}
+
+/* Navigation Links */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #6D4FC2;
+  background: #fff;
+  padding: 12px 24px;
+  border: 2px solid #6D4FC2;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Hover Effect */
+nav a:hover {
+  background: #6D4FC2;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a subtle hover effect for the links */
+nav a:active {
+  transform: translateY(1px);
+}

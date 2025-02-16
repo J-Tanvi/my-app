@@ -11,12 +11,13 @@ import Page404 from "../components/Page404";
 
 const Home = () => {
     return(
-        <div>
+        <div className="home">
             <h1>EmoQuest</h1>
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact-us">Contact Us</Link>
+                <br></br>
+                <Link to="/contact-us">ChatBot</Link>
+                <br></br>
                 <Link to="/diary">Diary</Link>
             </nav>
         </div>
